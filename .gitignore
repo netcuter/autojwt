@@ -1,0 +1,14 @@
+node_modules/
+*.log
+.DS_Store
+.env
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+build/
+dist/
+coverage/
+wordlists/*.txt
+!wordlists/jwt-common-secrets.txt

@@ -1,0 +1,24 @@
+{
+  "name": "jwt-pentesting-suite",
+  "version": "2.0.0",
+  "description": "Advanced JWT Penetration Testing Suite with 27+ tests and 500K+ wordlists",
+  "main": "bin/jwt-pentester.js",
+  "scripts": {
+    "start": "node bin/jwt-pentester.js",
+    "install-wordlists": "bash bin/install.sh",
+    "check-tokens": "bash bin/check-tokens.sh",
+    "deploy": "bash bin/safe-deploy-wsl.sh"
+  },
+  "keywords": [
+    "jwt",
+    "penetration-testing",
+    "security",
+    "bruteforce",
+    "wordlist",
+    "vulnerability-testing"
+  ],
+  "author": "Security Researcher",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

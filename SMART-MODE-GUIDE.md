@@ -22,7 +22,7 @@ cd /home/nc/jwt-pentesting-suite
 bash bin/jwt-smart-mode.sh
 
 # 3. Paste your JWT token
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+ey[..]...
 
 # 4. Enter API URL (or press Enter for offline)
 https://api.example.com/protected
@@ -96,7 +96,7 @@ $ bash bin/jwt-smart-mode.sh
 ╚════════════════════════════════════════════════════════╝
 
 Paste JWT Token:
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiODIifQ.sig
+eyJhbGciO[..]iODIifQ.sig
 
 API Endpoint URL (optional, press Enter to skip):
 [Press Enter]
@@ -108,14 +108,14 @@ API Endpoint URL (optional, press Enter to skip):
 ╚════════════════════════════════════════════════════════╝
 
 [1/10] Testing NONE Algorithm (CVE-2015-9235)...
-  Generated: eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJ1c2VyX2lkIj...
+  Generated: eyJhbGci[..]c2VyX2lkIj...
 
 [2/10] Testing Algorithm Confusion...
   Original: HS256
   Testing: RS256 (algorithm confusion)
 
 [3/10] Testing Signature Stripping...
-  Stripped: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lk...
+  Stripped: eyJhbGciO[..]VyX2lk...
 
 [4/10] Testing Payload Tampering...
   Original user_id: 82
@@ -159,13 +159,13 @@ Generated Test Tokens:
 ════════════════════════════════════════════════════════
 
 1. None Algorithm:
-   eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJ1c2VyX2lkIjoiODIifQ.
+   eyJhbGciOiJub[..]IjoiODIifQ.
 
 2. Tampered Payload (user_id=1, admin=true):
-   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMSIsImFkbW...
+   eyJhbGciOiJIU[..]IjoiMSIsImFkbW...
 
 3. Signature Stripped:
-   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiODIifQ.
+   eyJhbGciOi[..]yX2lkIjoiODIifQ.
 
 ════════════════════════════════════════════════════════
 Smart Mode Complete!
